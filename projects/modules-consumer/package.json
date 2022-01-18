@@ -1,0 +1,34 @@
+{
+  "name": "modules-consumer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.development.config.js",
+    "watch": "webpack --config webpack.production.config.js --watch",
+    "build": "webpack --config webpack.production.config.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "author": "Gil Fink",
+  "license": "",
+  "dependencies": {
+    "module": "^0.0.1",
+    "module-core": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

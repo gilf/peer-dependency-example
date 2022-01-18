@@ -1,0 +1,29 @@
+{
+  "name": "peer-dependency-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "projects/*"
+    ],
+    "nohoist": [
+      "**/webpack",
+      "**/webpack/**",
+      "**/webpack-cli",
+      "**/webpack-cli/**",
+      "**/webpack-dev-server",
+      "**/webpack-dev-server/**",
+      "**/react",
+      "**/react/**",
+      "**/react-dom",
+      "**/react-dom/**"
+    ]
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": ""
+}
